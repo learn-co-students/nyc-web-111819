@@ -27,7 +27,7 @@ end
 #     num * 100
 #   end
 # end
-# [1,2,3,4,5,6,7,8,9,10]
+
 found_number = numbers.find do |num|
   num % 2 == 0
 end
@@ -167,15 +167,6 @@ def find_points_for_player(player_name)
   # if that player's name is equal to the inputed players name
   find_player_by_name(player_name)[:points]
   # return that player's points
-end
-
-
-def samam
-  puts "hello"
-  return 100 + 150
-  puts "hey did I execute????"
-  200 + 10
-  5 * 5
 end
 
 

@@ -15,8 +15,13 @@
 
 ## SWBATS
 * Identify common data types in Ruby.
+* Explain what these iterators do:
+    * #each
+    * #select
+    * #map
+    * #find
 * Create Methods
-
+    * basically allow us to organize our procedures
 
 
 
@@ -38,9 +43,9 @@
 
 ### Enumerable Methods in ruby
 * each
-* map - transforming an array
-* find
-* select
+* map - put whatever the block returns in a new array
+* find - return the first thing that returns true 
+* select - returns all the things that returned true
 
 ### Methods in ruby
 * Implicit return
@@ -49,25 +54,24 @@
 
 
 ```ruby
-def num_points_scored(player_name)
+def game_hash
+    # returns a big hash with relavant data
+end
 
+def all_players
+    game_hash[:home][:players].concat(game_hash[:home][:players])
+end
+
+def find_player(player_name)
+    all_players.find { |player| player[:player_name] == player_name }
+end
+
+def num_points_scored(player_name)
+    find_player(player_name)[:points]
 end
 ```
-
+We didn't have to make so many different methods, but now the code is more readable, updatable and modular because we did.
 
 ### number_points_scored
 * break large problems into small problems
 * get quick feedback loop (code something, try it out)
-
-### find_player(player_name)
-```ruby
-def find_player(player_name)
-
-
-end
-```
-
-* Look up find
-* Explain variable naming
-
-Run app with ruby
