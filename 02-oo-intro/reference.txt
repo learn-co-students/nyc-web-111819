@@ -1,0 +1,51 @@
+clown1 = {
+  name: "Wacky",
+  age: 33,
+  skill: "make ballon animals",
+  fear: "porcupines"
+}
+
+clown2 = {
+  name: "Bluster",
+  age: 44,
+  skill: "juggling",
+  fear: "red noses"
+}
+
+clown3 = {
+  name: "Flaky",
+  age: 32,
+  skills: "pie throwing",
+  fear: "children"
+}
+
+clown4 = {
+  name: "Raspy",
+  age: 24,
+  skill: "haunting your dreams",
+  fear: "other clowns"
+}
+
+clown5 = {
+  name: "Krusty",
+  age: 39,
+  skill: "giving a creepy smile",
+  fear: "parties"
+}
+
+
+
+
+
+
+
+
+
+clown_jokes = [
+  "I’m a big fan of whiteboards. I find them quite re-markable.",
+  "How many programmers does it take to change a light bulb?\n\n None – It’s a hardware problem",
+  "There are only 10 kinds of people in this world: those who know binary and those who don’t.",
+  "In order to understand recursion you must first understand recursion.",
+  "Whats the object oriented way to becoming wealthy?\n\n Inheritance.",
+  "Changing random stuff until your program works is hacky and bad coding practice but if you do it fast enough it's machine learning and pays 4x current salary. - @smaine"
+]
