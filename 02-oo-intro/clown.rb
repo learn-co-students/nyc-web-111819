@@ -115,4 +115,17 @@ clown3 = Clown.new("MTA", 54, "delays", "fare evasion")
 clown4 = Clown.new("Tony", 99, "basketball", "mta")
 
 
+@roster = {}
+
+
+def add_student(student_name, grade)
+  # if the roster at grade is nil, make it an empty array and then add the student
+  # if the roster at grade is already an array, just add the student
+
+  
+  roster[grade] = [] if roster[grade].nil?
+  roster[grade] << student_name
+end
+
+
 binding.pry
