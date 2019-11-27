@@ -1,0 +1,41 @@
+SELECT * from artists;
+
+SELECT * from artists WHERE name = "Black Sabbath";
+
+CREATE TABLE fans (
+  id INTEGER PRIMARY KEY,
+  name TEXT
+);
+
+ALTER TABLE fans ADD COLUMN artist_id INTEGER;
+
+INSERT INTO fans (name, artist_id)
+VALUES ("kevin", 51);
+
+SELECT * FROM fans WHERE artist_id <> 169;
+-OR-
+SELECT * FROM fans WHERE artist_id != 169;
+
+
+SELECT artists.name, albums.title
+FROM artists
+JOIN albums ON artists.id = albums.artist_id;
+LIMIT 10
+
+SELECT artists.name, albums.title, COUNT(tracks.name)
+FROM albums
+JOIN artists ON artists.id = albums.artist_id
+JOIN tracks ON albums.id = tracks.album_id
+GROUP BY albums.title;
+
+DELETE FROM fans WHERE fans.name = "greg";
+
+SELECT artists.name, COUNT(tracks.name) AS track_count
+FROM artists
+JOIN albums ON albums.artist_id = artists.id
+JOIN tracks ON tracks.album_id = albums.id
+JOIN genres ON tracks.genre_id = genres.id
+WHERE genres.id = 1
+GROUP BY artists.name
+HAVING track_count > 30
+ORDER BY track_count DESC;
