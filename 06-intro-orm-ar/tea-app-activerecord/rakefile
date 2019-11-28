@@ -1,0 +1,25 @@
+require_relative './config/environment'
+require 'sinatra/activerecord/rake'
+
+desc "Start our app console"
+task :console do
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+  Pry.start
+end
+
+desc "says 👋"
+task :hello do
+  # all the logic in here
+  puts "suppppp"
+end
+
+desc "give random fruit"
+task :random_fruit do
+  puts ["apples", "bananas", "oranges"].sample
+end
+
+desc "start my app"
+task :start do
+  puts "starting app..."
+  system "ruby run.rb"
+end
