@@ -1,0 +1,10 @@
+<form action="/achievements/<%=@achievement.id%>" method='POST'>
+  <input type="hidden" name="_method" value="PATCH">
+
+  <input type="text" name="achievement[title]" placeholder="Enter Title" value="<%= @achievement.title %>">
+  <input type="number" name="achievement[year]" placeholder="Enter Year" value="<%= @achievement.year %>">
+  <input type="text" name="achievement[category]" placeholder="Enter Category" value="<%= @achievement.category %>">
+  <input type="text" name="achievement[img_url]" placeholder="Enter Image Url" value="<%= @achievement.img_url %>">
+
+  <input type="submit" value="Update Achievement" >
+</form>

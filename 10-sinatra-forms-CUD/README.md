@@ -11,15 +11,28 @@
 
 # RESTful CRUD
 * Reading ✅
-* New ✅
-* Creating ✅
+* New 
+* Creating
   * Form
   * Mass assignment
 * Edit form
   * Nested params
-  * One small caveat
 * Updating
+  * One small caveat
 * Deleting
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## If we have time
 * Build a custom route
