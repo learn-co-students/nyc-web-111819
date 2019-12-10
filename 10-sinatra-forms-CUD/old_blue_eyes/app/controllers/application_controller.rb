@@ -1,0 +1,22 @@
+require './config/environment'
+
+class ApplicationController < Sinatra::Base
+
+  configure do
+    set :public_folder, 'public'
+    set :views, 'app/views'
+  end
+
+  # INDEX Action/Method
+  get "/achievements" do
+    @achievements = Achievement.all 
+    erb :index
+  end
+
+  # SHOW Action/Method
+  get "/achievements/:id" do
+    @achievement = Achievement.find(params[:id]) 
+    erb :show
+  end
+
+end
