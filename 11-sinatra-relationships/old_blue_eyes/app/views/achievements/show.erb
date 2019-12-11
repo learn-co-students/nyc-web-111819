@@ -1,0 +1,23 @@
+<h4><a href="/achievements">Index</a></h4> 
+<h4><a href="/achievements/<%= @achievement.id %>/edit">Edit</a></h4> 
+
+<h3><%= @achievement.title %></h3>
+<h6><%= @achievement.category %></h6>
+<h6><%= @achievement.year %></h6>
+<img class='show-img' src="<%= @achievement.img_url %>" alt="<%= @achievement.title%>">
+
+<h3>Fans of this Achievement</h3>
+
+<ul>
+  <% @achievement.fans.each do |fan| %> 
+   <li><%= fan.name %></li>
+  <% end%>
+</ul>
+
+<br>
+<hr>
+
+<form action="/achievements/<%= @achievement.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="DELETE <%= @achievement.title %>">
+</form>

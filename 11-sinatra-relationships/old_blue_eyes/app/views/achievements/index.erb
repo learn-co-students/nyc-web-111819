@@ -2,9 +2,12 @@
   <% @achievements.each do |achievement| %>
     <div class='index-item'>
       <img class='index-img' src="<%=achievement.img_url%>" alt="<%=achievement.title%>"> 
-      <h6>Title: <%= achievement.title %></h6> 
+      <h6>Title:<a href="/achievements/<%= achievement.id %>"><%= achievement.title %></a></h6> 
       <h6>Category: <%= achievement.category %></h6> 
       <h6>Year: <%= achievement.year%></h6>
+      
     </div>
   <% end %>
 </div>
+
+

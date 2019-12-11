@@ -1,0 +1,13 @@
+<form action="/fans" method='POST'>
+  <input type="text" name="name" placeholder="Enter Name">
+  <input type="text" name="img_url" placeholder="Enter Image Url">
+
+
+  <select name="achievement_id">
+    <% @achievements.each do |achievement| %>
+      <option value="<%= achievement.id %>"><%= achievement.title%></option>
+    <% end %>
+  </select>
+
+  <input type="submit">
+</form>

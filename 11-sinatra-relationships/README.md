@@ -15,3 +15,38 @@
   * What's the difference between it and an <input />?
   * What are some similarities?
 * How can I list the thing I has_many of in a view?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Building goals
+  - Add achievment to fan index tile 
+  - Add a list of fans to Achievment show page 
+  - Create a new page for Fan that creates a new Fan with an associated Achievement 

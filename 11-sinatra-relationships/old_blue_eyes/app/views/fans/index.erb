@@ -1,0 +1,9 @@
+<div class="index-container">
+  <% @fans.each do |fan| %>
+    <div class='index-item'>
+      <img class='index-img' src="<%=fan.img_url%>" alt="<%=fan.name%>"> 
+      <h6>Name: <%= fan.name %></h6> 
+      <h6>The only good thing Sinatra made is... <%= fan.achievement.title %></h6>
+    </div>
+  <% end %>
+</div>
