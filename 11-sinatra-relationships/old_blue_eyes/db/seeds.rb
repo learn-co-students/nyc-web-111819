@@ -1,4 +1,5 @@
 Achievement.destroy_all
+# Fan.destroy_all
 
 
   Achievement.create(title: "Come Fly with Me", year: 1957, category: "song", img_url: "https://images-na.ssl-images-amazon.com/images/I/51Fdzov3KPL.jpg")
@@ -35,3 +36,13 @@ Achievement.destroy_all
   #   Fan.create(trainer)
   # end 
   
+
+  # 4 ways to create associations
+  # achievement1 = Achievement.create(title: "Come Fly with Me", year: 1957)
+
+
+  # Fan.create(name: 'Greg', achievement_id: achievement.id) #1
+  # Fan.create(name: 'Greg', achievement: achievement)       #2
+
+  # achievement1.fans.create(name: 'Greg')                   #3
+  # achievement1.fans << Fan.create(name: 'Greg')            #4
