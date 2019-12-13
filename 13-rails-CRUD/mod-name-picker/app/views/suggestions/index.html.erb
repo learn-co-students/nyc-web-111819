@@ -1,0 +1,7 @@
+<h3>Suggestion List</h3>
+
+<ul> 
+  <% @suggestions.each do |suggestion|%>
+    <li><%= link_to suggestion.name, suggestion_path(suggestion) %></li>
+  <% end%>
+</ul>

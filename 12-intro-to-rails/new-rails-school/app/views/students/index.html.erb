@@ -1,0 +1,12 @@
+<h1>Student Index Page</h1>
+
+<ul>
+  <% @students.each do |s| %>
+    
+    <%# link_to("display text", "/students/#{s.id}") %>
+    <%# link_to("display text", student_path(s)) %>
+    <%# link_to("display text", student_path(s.id)) %>
+    <li><%= link_to s.name, s %></li>
+
+  <% end%>
+</ul>
