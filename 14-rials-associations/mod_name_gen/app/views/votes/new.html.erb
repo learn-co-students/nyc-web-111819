@@ -1,0 +1,11 @@
+<h3>Vote For a Suggestion</h3>
+
+<%= form_for @vote do |f| %>
+  <%= f.label :user_id %>
+  <%= f.collection_select :user_id, @users, :id, :name %>
+
+  <%= f.label :suggestion_id %>
+  <%= f.collection_select :suggestion_id, @suggestions, :id, :name %>
+
+  <%= f.submit %>
+<% end %>

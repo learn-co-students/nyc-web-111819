@@ -1,0 +1,11 @@
+<h3>Suggestion List</h3>
+
+
+<div class="index-container">
+  <% @suggestions.each do |suggestion| %>
+    <div class='index-item'>
+      <img class='index-img' src="<%=suggestion.img_url%>" alt="<%=suggestion.name%>"> 
+      <h6>Name: <%= link_to suggestion.name, suggestion %></h6> 
+    </div>
+  <% end %>
+</div>

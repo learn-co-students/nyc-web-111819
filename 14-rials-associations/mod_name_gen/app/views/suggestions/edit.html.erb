@@ -1,0 +1,18 @@
+<h3>Edit Suggestion</h3>
+
+<%# <form action='/suggestions' method='POST'>
+  <input type="text" name="suggestion[name]"> 
+</form> %>
+
+<%= form_for @suggestion do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :slogan %>
+  <%= f.text_field :slogan %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit %>
+<% end %>
