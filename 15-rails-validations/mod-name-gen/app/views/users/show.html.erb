@@ -1,0 +1,19 @@
+<h3>User Show Page</h3>
+
+<h5>Name: <%= @user.name %></h5>
+<marquee><img src="<%= @user.img_url %>" alt="<%= @user.img_url%> "></marquee>
+
+<br>
+<hr>
+
+<h3>I have voted for...</h3>
+<ul>
+  <% @user.votes.uniq.each do |vote| %>
+    <li><%= vote.suggestion.name %></li>
+  <% end %>
+</ul>
+
+<br>
+<hr>
+
+<%= link_to "Back to List", users_path %>

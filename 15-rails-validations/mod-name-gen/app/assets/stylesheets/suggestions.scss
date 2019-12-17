@@ -1,0 +1,46 @@
+// Place all the styles related to the Suggestions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img {
+  max-width: 33%;
+}
+
+.index-img {
+  max-width: 150px;
+}
+
+
+.index-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.index-item {
+  max-width: 200px;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 3px;
+  background-color: lightgrey;
+}
+
+.nav {
+    background: #fff;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    margin: 0px auto;
+    max-width: 960px;
+    padding: 0% 2.25%; 
+    width: 85%;
+    
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .logo {
+    max-height: 120px;
+
+  }

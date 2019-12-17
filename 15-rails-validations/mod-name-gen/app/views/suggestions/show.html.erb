@@ -1,0 +1,14 @@
+<h3>Suggestion Show Page</h3>
+
+<%= button_to "Delete", suggestion_path(@suggestion), method: :delete %>
+<%= button_to "Edit", edit_suggestion_path(@suggestion), method: :get %>
+
+<h5>Name: <%= @suggestion.name %></h5>
+<h5>Slogan: <%= @suggestion.slogan %></h5>
+<img src="<%= @suggestion.img_url %>" alt="<%= @suggestion.img_url%> ">
+<br>
+<hr>
+<h2>VOTES: <%= @suggestion.votes.count %></h2>
+<br>
+<hr>
+<%= link_to "Back to List", suggestions_path %>

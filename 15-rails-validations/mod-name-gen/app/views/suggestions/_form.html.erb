@@ -1,0 +1,24 @@
+<% if flash[:messages] %>
+  <h2>Errors</h2>
+  <ul>
+    <% flash[:messages].each do |error| %>
+      <li><%= error %> </li>
+    <% end%>
+  </ul>
+<% end%>
+
+<%= form_for @suggestion do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :slogan %>
+  <%= f.text_field :slogan %>
+
+  <%= f.label :hype_rating %>
+  <%= f.number_field :hype_rating %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit %>
+<% end%>
