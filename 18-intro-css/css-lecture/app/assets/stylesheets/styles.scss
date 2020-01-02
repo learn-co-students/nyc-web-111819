@@ -1,0 +1,40 @@
+
+body {
+  background: url('https://www.nps.gov/lacl/learn/nature/images/Mountains-page_-Image-w-cred-cap_-1200w_-Neacola-CRL00222_3.jpg?maxwidth=1200&maxheight=1200&autorotate=false') no-repeat;
+  background-size: cover;
+}
+
+#main-header {
+  font-size: 3em;
+}
+
+input[name="search"]::placeholder {
+  color: rgb(0, 200, 0)
+}
+
+ul p.heroine-name {
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+ul p.heroine-name:hover {
+  color: red;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+ul p {
+  font-weight: normal;
+}
+
+div.overlay {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.65);
+  z-index: -1;
+}
+
