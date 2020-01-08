@@ -32,6 +32,7 @@ const movies = [
     year: 2004  
   }
 ]
+
 let ul = document.querySelector('ul')
 
 movies.forEach(function(movie){
@@ -64,7 +65,7 @@ function createLi(movie) {
 ul.addEventListener('click', function(e){
   // console.dir(e.target)
   console.log(e.target.dataset.purpose)
-  
+
   if (e.target.className === 'up-vote'){
 
     console.log('only prints when an upvote button is clicked')
@@ -93,7 +94,7 @@ formButton.addEventListener('click', function(e){
   let newForm = document.createElement('form')
 
   newForm.innerHTML = `
-    <input type="text" name="blah">
+    <input type="text" name="title">
     <input type="text" name="imageUrl">
     <input type="number" name="year">
     <input type="submit" value="submit">
