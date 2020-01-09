@@ -11,7 +11,7 @@
 
 ## JSON Server
 
-* install using `npm install json-server`
+* install using `npm install -g json-server`
 * provides a quick-and-dirty way of setting up a backend API
 * not production ready, used for prototyping and practice
 * leverages JSON objects for persistance
@@ -19,7 +19,7 @@
 
 ## RESTful call to json-server
 
-### GET: `http://localhost:3000/movies`
+### GET: `http://localhost:4000/movies`
 
 Example response:
 ```javascript

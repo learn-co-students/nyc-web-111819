@@ -1,44 +1,37 @@
 console.log("Movie Rating Application")
 
-const movies = [
-  {
-    title: 'Jaws',
-    imageUrl: 'https://resizing.flixster.com/h8e7W7cVaQhuLdSvABDkJk6r5sc=/206x305/v1.bTsxMTE2NjE5OTtqOzE4MzU0OzEyMDA7ODAwOzEyMDA',
-    year: 1975
-  },
-  { 
-    title: 'The Matrix',
-    imageUrl: 'https://imgc.allpostersimages.com/img/print/u-g-F4S5W20.jpg?w=550&h=550&p=0',
-    year: 1999  
-  },
-  {
-    title: 'The Goonies',
-    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/515DYf99zfL.jpg',
-    year: 1985
-  },
-  { 
-    title: 'Free Willy',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/Free_willy.jpg/220px-Free_willy.jpg',
-    year: 1993  
-  },
-  { 
-    title: 'Top Gun',
-    imageUrl: 'https://m.media-amazon.com/images/M/MV5BZjQxYTA3ODItNzgxMy00N2Y2LWJlZGMtMTRlM2JkZjI1ZDhhXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg',
-    year: 1986  
-  },
-  { 
-    title: 'Mean Girls',
-    imageUrl: 'https://img01.mgo-images.com/image/thumbnail?id=1MV270609a1c6c89af5538a6d63cea71ed4&ql=70&sizes=310x465',
-    year: 2004  
-  }
-]
-
 let ul = document.querySelector('ul')
 
-movies.forEach(function(movie){
-  let li = createLi(movie)
-  ul.appendChild(li)
-})
+// movies.forEach(function(movie){
+//   let li = createLi(movie)
+//   ul.appendChild(li)
+// })
+
+function getMovies(){
+  fetch("http://localhost:4000/movies")
+  .then(response => response.json())
+  .then(movies => {
+    // console.log(movies)
+
+    movies.forEach(function(movie){
+      let li = createLi(movie)
+      ul.appendChild(li)
+    })
+  })
+}
+
+getMovies()
+
+createMovie(movie){
+  fetch("http://localhost:4000/movies",{
+    method: "POST",
+    headers: {
+        "content-type": "application/json",
+        accepts: "application/json"
+    },
+    body: JSON.stringify(movie)
+  })
+}
 
 function createLi(movie) {
   let li = document.createElement('li')
@@ -68,7 +61,7 @@ ul.addEventListener('click', function(e){
 
   if (e.target.className === 'up-vote'){
 
-    console.log('only prints when an upvote button is clicked')
+    // console.log('only prints when an upvote button is clicked')
     let parentLi = e.target.parentNode
     let span = parentLi.querySelector('span')
 
