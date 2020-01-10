@@ -1,12 +1,13 @@
 console.log("Movie Rating Application")
 
 let ul = document.querySelector('ul')
+let baseUrl = "http://localhost:4000"
 
 function getMovies(){
-  fetch("http://localhost:4000/movies")
+  fetch(`${baseUrl}/movies`)
   .then(response => response.json())
   .then(movies => {
-    // console.log(movies)
+    // console.log(movies) 
 
     movies.forEach(function(movie){
       let li = createLi(movie)
@@ -17,16 +18,6 @@ function getMovies(){
 
 getMovies()
 
-// function createMovie(movie) {
-//   fetch("http://localhost:4000/movies", {
-//     method: "POST",
-//     headers: {
-//         "content-type": "application/json",
-//         accepts: "application/json"
-//     },
-//     body: JSON.stringify(movie)
-//   })
-// }
 
 function createLi(movie) {
   let li = document.createElement('li')
@@ -91,14 +82,33 @@ formButton.addEventListener('click', function(e){
   newForm.addEventListener('submit', function(e){
     e.preventDefault()
 
-    console.log(e.target)
-
     let title = e.target.title.value
     let imageUrl = e.target.imageUrl.value
     let year = e.target.year.value
+    let score = 0
 
-    let movie = { title , imageUrl, year }
-    
+    let movie = { title , imageUrl, year, score }
+
+    fetch(`${baseUrl}/movies`, {
+      method: 'POST',
+      headers: {
+        "content-type": "application/json",
+        accepts: "application/json"
+      },
+        body: JSON.stringify(movie)
+    })
+    .then(function(response) { return response.json() })
+    .then(function(movie){
+      console.log(movie)
+      // pessimistic rendering
+      // ul.append(createLi(movie))
+
+      // newForm.reset()
+  
+      // document.body.replaceChild(formButton, newForm)
+    })
+       
+    // optimistic rendering
     ul.append(createLi(movie))
 
     newForm.reset()
@@ -107,3 +117,15 @@ formButton.addEventListener('click', function(e){
   })
 
 })
+
+
+// function createMovie(movie) {
+//   fetch("http://localhost:4000/movies", {
+//     method: "POST",
+//     headers: {
+//         "content-type": "application/json",
+//         accepts: "application/json"
+//     },
+//     body: JSON.stringify(movie)
+//   })
+// }
