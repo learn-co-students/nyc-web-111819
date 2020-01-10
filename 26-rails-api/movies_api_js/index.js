@@ -117,15 +117,3 @@ formButton.addEventListener('click', function(e){
   })
 
 })
-
-
-// function createMovie(movie) {
-//   fetch("http://localhost:4000/movies", {
-//     method: "POST",
-//     headers: {
-//         "content-type": "application/json",
-//         accepts: "application/json"
-//     },
-//     body: JSON.stringify(movie)
-//   })
-// }
