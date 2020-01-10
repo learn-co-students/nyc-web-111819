@@ -1,7 +1,7 @@
 console.log("Movie Rating Application")
 
 let ul = document.querySelector('ul')
-let baseUrl = "http://localhost:4000"
+let baseUrl = "http://localhost:3000/api/v1"
 
 function getMovies(){
   fetch(`${baseUrl}/movies`)
