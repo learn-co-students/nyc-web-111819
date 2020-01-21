@@ -1,62 +1,33 @@
 console.log("Movie Rating Application")
 
+document.addEventListener("DOMContentLoaded", function(){
+  getMovies()
+})
+
 let ul = document.querySelector('ul')
-let baseUrl = "http://localhost:3000/api/v1"
+let baseUrl = "http://localhost:3000/api/v1/movies"
 
 function getMovies(){
-  fetch(`${baseUrl}/movies`)
-  .then(response => response.json())
+  Adapter.getMovies(baseUrl)
   .then(movies => {
-    // console.log(movies) 
-
     movies.forEach(function(movie){
-      let li = createLi(movie)
-      ul.appendChild(li)
+      let newMovie = new Movie(movie)
+      newMovie.render(ul)
     })
   })
 }
 
-getMovies()
-
-
-function createLi(movie) {
-  let li = document.createElement('li')
-  let deleteButton = document.createElement('button')
-  // console.log('rendering movie', movie.title)
-
-  li.innerHTML = `
-    <h3>${movie.title}</h3>
-    <img alt=""
-        src="${movie.imageUrl}" />
-    <h4>Year: </h4>
-    <p>${movie.year}</p>
-    <h4>Score: <span>0</span> </h4>
-    <button class="up-vote">Up Vote</button>
-    <button data-purpose='down'>Down Vote</button>
-    <button data-purpose="delete">&times;</button>
-  `
-
-  li.className = 'movie'
-  li.dataset.beef = 'stuff'
-  return li
-}
-
 ul.addEventListener('click', function(e){
-  // console.dir(e.target)
   console.log(e.target.dataset.purpose)
 
   if (e.target.className === 'up-vote'){
-
-    // console.log('only prints when an upvote button is clicked')
     let parentLi = e.target.parentNode
     let span = parentLi.querySelector('span')
 
     span.innerText = parseInt(span.innerText) + 1 
     
   } else if (e.target.dataset.purpose === 'delete'){
-
     e.target.parentNode.remove()
-
   }
 })
 
@@ -87,29 +58,18 @@ formButton.addEventListener('click', function(e){
     let year = e.target.year.value
     let score = 0
 
-    let movie = { title , imageUrl, year, score }
+    let movieObj = { title , imageUrl, year, score }
 
-    fetch(`${baseUrl}/movies`, {
-      method: 'POST',
-      headers: {
-        "content-type": "application/json",
-        accepts: "application/json"
-      },
-        body: JSON.stringify(movie)
-    })
-    .then(function(response) { return response.json() })
+    Adapter.createMovie(baseUrl, movieObj)
     .then(function(movie){
       console.log(movie)
       // pessimistic rendering
-      // ul.append(createLi(movie))
-
-      // newForm.reset()
-  
-      // document.body.replaceChild(formButton, newForm)
+      let newMovie = new Movie(movie)
+      newMovie.render(ul)
     })
        
     // optimistic rendering
-    ul.append(createLi(movie))
+    // ul.append(createLi(movie))
 
     newForm.reset()
 
