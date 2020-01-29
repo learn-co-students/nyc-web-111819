@@ -10,6 +10,11 @@ State, Events, and Conditional Rendering
 - [ ] Pass data up and down the component hierarchy with our callbacks
 - [ ] Use form data to update state in various ways
 
+### Features / Process
+- Walk through code changes
+- Add Comment Form ( without persistence ==> practice HW )
+- Pair Program & Blind Driver: Search with automatic filtering 
+
 ## Lecture Notes
 
 ### Vanilla JS Forms

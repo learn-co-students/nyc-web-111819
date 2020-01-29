@@ -115,3 +115,10 @@ body {
   top: -20px;
   background: aliceblue;
 }
+
+.new-comment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 30%;
+}

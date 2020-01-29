@@ -25,6 +25,7 @@ class App extends React.Component {
   render(){
     let displayedBathrooms = [...this.state.bathrooms]
     displayedBathrooms = displayedBathrooms.filter(bathroom => bathroom.type.includes(this.state.filter))
+    console.log(displayedBathrooms)
 
     return (
       <div className="App">
@@ -32,12 +33,13 @@ class App extends React.Component {
         <button className="filter-item" onClick={this.getBathrooms}>Flush!</button>
         <Navbar changeFilter={this.changeFilter} />
         {this.state.bathrooms.length === 0 && <div>press flush</div>}
-        {displayedBathrooms.map(({id, location, image, type}) => (
+        {displayedBathrooms.map(({id, location, image, type, reviews}) => (
           <BathroomCard 
             key={id} 
             name={location} 
             image={image}
-            type={type}/>
+            type={type}
+            reviews={reviews}/>
         ))}
      </div>
     );
