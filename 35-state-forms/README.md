@@ -12,8 +12,8 @@ State, Events, and Conditional Rendering
 
 ### Features / Process
 - Walk through code changes
-- Add Comment Form ( without persistence ==> practice HW )
-- Pair Program & Blind Driver: Search with automatic filtering 
+- Add Comment Form 
+- PRACTICE HW ====> Pair Program & Blind Driver: Search with automatic filtering 
 
 ## Lecture Notes
 

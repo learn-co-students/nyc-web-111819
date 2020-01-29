@@ -7,7 +7,6 @@ class BathroomCard extends React.Component {
         commentsOpen: false
     }
 
-
     toggleComments = () => {
         this.setState({ commentsOpen: !this.state.commentsOpen })
     }
@@ -20,7 +19,7 @@ class BathroomCard extends React.Component {
             <div className="bathroom-info">
                 <div>Location: {name}</div>
                 <div>Requires Passcode</div>
-                <div>Rating: {rating ? `${rating} / 5` : "No ratings yet"}</div>
+                <div>Rating: {rating ? `${rating} / 10` : "No ratings yet"}</div>
                 <button onClick={this.toggleComments}>{this.state.commentsOpen ? "Hide" : "Show"} Comments</button>
                 {this.state.commentsOpen 
                     ? <div className="comment-parent">
@@ -37,7 +36,7 @@ class BathroomCard extends React.Component {
             <div className="bathroom-card">
                 <img alt="possibly gross toilet" style={{height: '100px', width: '100px'}} src={this.props.image}/>
                 {this.renderBathroomInfo()}
-                <CommentForm />
+                <CommentForm bathroomId={this.props.id} handleAddReview={this.props.handleAddReview}/>
             </div>
         )
     }

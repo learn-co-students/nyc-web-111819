@@ -10,6 +10,18 @@ class App extends React.Component {
     filter: ''
   }
 
+  handleAddReview = (reviewInfo) => {
+    // using map to find a single object in an array of objects and make some change JUST TO THAT ONE 
+    let newBathrooms = this.state.bathrooms.map(bathroom => {
+      if(bathroom.id === reviewInfo.bathroomId){
+          bathroom.reviews.push(reviewInfo)
+      }
+      return bathroom
+    })
+    
+    this.setState({ bathrooms: newBathrooms })
+  }
+
   changeFilter = (newFilter) => {
     this.setState({ filter: newFilter})
   }
@@ -36,10 +48,12 @@ class App extends React.Component {
         {displayedBathrooms.map(({id, location, image, type, reviews}) => (
           <BathroomCard 
             key={id} 
+            id={id}
             name={location} 
             image={image}
             type={type}
-            reviews={reviews}/>
+            reviews={reviews}
+            handleAddReview={this.handleAddReview}/>
         ))}
      </div>
     );
