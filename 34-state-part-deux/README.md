@@ -1,54 +1,3 @@
-Intro to React
-=============================
-
-## SWBATs
-- [ ] Recognize declarative and imperative coding paradigms
-      ===> declarative ==> make me a salmon pokebowl with seaweed salad
-      ===> imperative ==> salmon, brown rice mixed with white rice, spicy mayo, slice the salmon, cook the rice, how many scoops  
-- [ ] Visualize/identify Components on any website
-- [ ] Explain what a Component is conceptually in the UI
-- [ ] Briefly explain Babel's purpose in React ==> backwards compatibility && JSX 
-- [ ] Explain what a React Component actually is in code
-- [ ] Use JSX to build custom components and render them in the browser
-- [ ] See how props are to components as arguments are to functions
-
-### Review 
-
-function makeCard(title, description, rating)
-<Card title={title} description={description} rating={rating}>
-
-
-JSX & Props
-=============================
-
-## SWBATs
-- [ ] Understand how `create-react-app` works and what it offers a developer
-- [ ] Organize code into files and use the import-export syntax to pass ddata between components
-- [ ] Use props to make components more dynamic and reusable
-- [ ] Setup a new React app and play around with building UIs
-- [ ] **BONUS** Use the `children` prop 
-
-### App Ideas
-- Yelp for bathrooms of places ===> 3
-
-Bathrooms ==> id, typeId, locationId
-Location ===> id, name, lat, long
-    ===> Stretch: LocationType 
-User ===> id, name, gender ()
-BathroomType ===> id, typeString (Woman, Man, Neutral) 
-    ===> Stretch: Tags
-UserPreferences ==> UserId, BathroomTypeId
-Review ===> id, userId, bathroomId, rating, comment
-
-
-
-
-- Kobe Bryant remembrance app. Rest in Power <3 ===> 2
-- News Aggregator ===> 2 
-- DogStagram ==> 2
-
-
-
 State, Events, and Conditional Rendering
 ==============
 
@@ -62,24 +11,27 @@ State, Events, and Conditional Rendering
 - [ ] Correctly choose when to use `props` vs `state`, and explain why one would use one or the other
 
 ## Lecture Notes
-- curlies ==> claw hands 
-
-- state
-- reinforces labs 
-- props  ===> when props and state later
-- events are synthetic (fakeish) vs native events 
 
 
-- npx create-react-app
-- start building your components ==> define it, export default, import wherever you want to use it/parent component
-- decide if you need state in your component, define the default state, conditional render, and add callbacks to setState
-- decide where you need to pass props and format appropriately
-- ALWAYS USE GOOD NAMING 
-- arrow functions 
-- maybbbeeee default props 
-- ternaries!!!! ==> show you an alternate later. get real hype at you guys about ES6
-- 
 
+### State Part II Features
+- fetch! (on button click)
+- choosing where to put state and which props to pass
+- callbacks to update state from a child component
+- moving around state ==> how to make updates 
+
+
+### App Ideas
+- Yelp for bathrooms of places ===> 3
+
+Bathrooms ==> id, typeId, locationId
+Location ===> id, name, lat, long
+    ===> Stretch: LocationType 
+User ===> id, name, gender ()
+BathroomType ===> id, typeString (Woman, Man, Neutral) 
+    ===> Stretch: Tags
+UserPreferences ==> UserId, BathroomTypeId
+Review ===> id, userId, bathroomId, rating, comment
 
 
 ### Using Events
