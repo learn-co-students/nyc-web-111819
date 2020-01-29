@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+div#filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 60%;
+  margin: 10px 10px;
+}
+
+div#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.filter-item {
+  /* border-top-right-radius: 16px; */
+  /* border-bottom-right-radius: 16px; */
+  border-radius: 16px;
+  margin-right: 4px;
+  position: relative;
+  border: 1px solid #bbbac0;
+  background: #fff;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transition: background-color .4s,border-color .4s,color .4s,clip-path .45s,transform .4s,-webkit-clip-path .45s;
+  outline: none;
+  -webkit-appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: buttonface;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 11px system-ui;
+  padding: 1px 7px 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-image: initial;
+}
+
+.bathroom-card {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 15px 20px;
+}
+
+.bathroom-info {
+  flex-basis: 80%;
+  text-align: left;
+  margin-left: 80px;
+}
+
+html, body, #root {
+  height: 100%
+}
+
+body {
+  position: relative;
+  top: -20px;
+  background: aliceblue;
+}
+
+.new-comment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 30%;
+}
