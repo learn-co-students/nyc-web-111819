@@ -3,9 +3,21 @@ import Parent from './Parent'
 
 class LifeCycleApp extends React.Component {
 
+  state = {
+    show: true
+  }
+
+  toggleShow = () => {
+    this.setState({ show: !this.state.show })
+  }
+
   render(){
     return (
-      <Parent name="parent"/>
+      <div>
+        <button onClick={this.toggleShow}>SHOW/HIDE</button>
+        {this.state.show && <Parent name="parent"/>}
+
+      </div>
     )
   }
 }

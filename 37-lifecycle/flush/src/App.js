@@ -10,6 +10,14 @@ class App extends React.Component {
     filter: ''
   }
 
+  componentDidMount(){
+    fetch('http://localhost:3000/bathrooms?_embed=reviews')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({ bathrooms: data })
+      })
+  }
+
   handleAddReview = (reviewInfo) => {
     // using map to find a single object in an array of objects and make some change JUST TO THAT ONE 
     let newBathrooms = this.state.bathrooms.map(bathroom => {
@@ -26,14 +34,6 @@ class App extends React.Component {
     this.setState({ filter: newFilter})
   }
 
-  getBathrooms = () => {
-    fetch('http://localhost:3000/bathrooms?_embed=reviews')
-      .then(res => res.json())
-      .then(data => {
-        this.setState({ bathrooms: data })
-      })
-  }
-
   render(){
     let displayedBathrooms = [...this.state.bathrooms]
     displayedBathrooms = displayedBathrooms.filter(bathroom => bathroom.type.includes(this.state.filter))
@@ -42,9 +42,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Royal 👑 Flush</h1>
-        <button className="filter-item" onClick={this.getBathrooms}>Flush!</button>
         <Navbar changeFilter={this.changeFilter} />
-        {this.state.bathrooms.length === 0 && <div>press flush</div>}
+        {this.state.bathrooms.length === 0 && <h1>🧻🚽FLUSHING🚽🧻</h1>}
         {displayedBathrooms.map(({id, location, image, type, reviews}) => (
           <BathroomCard 
             key={id} 
