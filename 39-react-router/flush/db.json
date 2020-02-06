@@ -1,0 +1,182 @@
+{
+  "bathrooms": [
+    {
+      "id": 1,
+      "type": "neutral",
+      "location": "Chipotle",
+      "image": "https://i.redd.it/mdr3yglxspa41.jpg"
+    },
+    {
+      "id": 2,
+      "type": "men",
+      "location": "Macy's Department Store",
+      "image": "https://i.redd.it/kc5gc07wo0731.jpg"
+    },
+    {
+      "id": 3,
+      "type": "women",
+      "location": "Flatiron School",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61b3Njw7WXL._AC_SX522_.jpg"
+    },
+    {
+      "id": 4,
+      "type": "neutral",
+      "location": "Staten Island Ferry Terminal",
+      "image": "https://i.dailymail.co.uk/i/newpix/2018/04/02/15/4AC3650D00000578-5569829-image-a-31_1522677661504.jpg"
+    },
+    {
+      "id": 5,
+      "type": "women",
+      "location": "Rick Sanchez's Personal Toilet",
+      "image": "https://i.ytimg.com/vi/jWFxlRpcjd0/maxresdefault.jpg"
+    },
+    {
+      "id": 6,
+      "type": "neutral",
+      "location": "Staten Island Ferry Terminal",
+      "image": "https://images.homedepot-static.com/productImages/22177edf-6f51-4444-b7bb-90e53d3055a5/svn/white-swiss-madison-toilet-bowls-sm-wt660-64_1000.jpg"
+    },
+    {
+      "id": 7,
+      "type": "women",
+      "location": "Rick Sanchez's Personal Toilet",
+      "image": "https://i.ytimg.com/vi/jWFxlRpcjd0/maxresdefault.jpg"
+    },
+    {
+      "id": 8,
+      "type": "neutral",
+      "location": "Staten Island Ferry Terminal",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61b3Njw7WXL._AC_SX522_.jpg"
+    },
+    {
+      "id": 9,
+      "type": "women",
+      "location": "Rick Sanchez's Personal Toilet",
+      "image": "https://i.ytimg.com/vi/jWFxlRpcjd0/maxresdefault.jpg"
+    },
+    {
+      "id": 10,
+      "type": "neutral",
+      "location": "Staten Island Ferry Terminal",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61b3Njw7WXL._AC_SX522_.jpg"
+    },
+    {
+      "id": 11,
+      "type": "women",
+      "location": "Rick Sanchez's Personal Toilet",
+      "image": "https://i.ytimg.com/vi/jWFxlRpcjd0/maxresdefault.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "body": "Reaaaal Dirty",
+      "userId": 2,
+      "bathroomId": 1,
+      "rating": 1
+    },
+    {
+      "id": 2,
+      "body": "Once I saw a cockroach crawl out of the sink. Don't go here.",
+      "userId": 2,
+      "bathroomId": 3,
+      "rating": 2
+    },
+    {
+      "id": 3,
+      "body": "There is some greaaaat graffiti in here!",
+      "userId": 2,
+      "bathroomId": 5,
+      "rating": 8
+    },
+    {
+      "id": 4,
+      "body": "Smells like dirty socks.",
+      "userId": 2,
+      "bathroomId": 1,
+      "rating": 10
+    },
+    {
+      "id": 6,
+      "body": "Never any paper towels",
+      "userId": 1,
+      "bathroomId": 3,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "body": "I always manage to get in without a passcode.",
+      "userId": 1,
+      "bathroomId": 5,
+      "rating": 8
+    },
+    {
+      "id": 8,
+      "body": "I got married here! ",
+      "userId": 2,
+      "bathroomId": 1,
+      "rating": 10
+    },
+    {
+      "body": "such a throne. makes me feel like a king.",
+      "rating": 10,
+      "userId": 3,
+      "bathroomId": 2,
+      "id": 11
+    },
+    {
+      "body": "so many frogs...?",
+      "rating": 3,
+      "userId": 3,
+      "bathroomId": 4,
+      "id": 12
+    },
+    {
+      "body": "Why are there frogs?!?!?",
+      "rating": 2,
+      "userId": 4,
+      "bathroomId": 4,
+      "id": 13
+    },
+    {
+      "body": "that toilet is so beautiful. goalz.",
+      "rating": 10,
+      "userId": 5,
+      "bathroomId": 6,
+      "id": 14
+    },
+    {
+      "body": "new comment",
+      "rating": 1,
+      "bathroomId": 2,
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Caryn",
+      "gender": "Woman"
+    },
+    {
+      "id": 2,
+      "name": "Mojo",
+      "gender": "Man"
+    },
+    {
+      "id": 3,
+      "name": "BMO",
+      "gender": "Neutral"
+    },
+    {
+      "id": 4,
+      "name": "Jack",
+      "gender": "Man"
+    },
+    {
+      "id": 5,
+      "name": "Ryan",
+      "gender": "Woman"
+    }
+  ]
+}
