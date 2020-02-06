@@ -11,15 +11,6 @@ React Router
 - [ ] Make the distinction between `state` being one _Single Source of Truth_ and `react-router` being another _Single Source of Truth_
 - [ ] **HOMEWORK** Use `Redirect` to navigate pages
 
-Bathrooms ==> id, typeId, locationId
-Location ===> id, name, lat, long
-    ===> Stretch: LocationType 
-User ===> id, name, gender ()
-BathroomType ===> id, typeString (Woman, Man, Neutral) 
-    ===> Stretch: Tags
-UserPreferences ==> UserId, BathroomTypeId
-Review ===> id, userId, bathroomId, rating, comment
-
 
 
 ## Movie Review Fullstack 
@@ -35,25 +26,12 @@ Review ===> id, userId, bathroomId, rating, comment
 ## Lecture Notes
 - [Example with All of Ze Routes](https://github.com/sbal13/Project_Athena_client/blob/master/src/App.js)
 
-## Dynamic Routing from Rails
-"/movies/:id"  ====> Movie Page 
-"/movies" ====> Movie Cards
-"/login" ===> Login
-"/signup" ===> Signup
-
 ## SPAs
 
-## Great Things
-- supa fast user experience 
-- data is centralized 
 
-## Struggles 
-- initial load can be super slow 
-- page navigation ===> back doesn't work, 
-- can't analyze traffic to various views / pages 
-- can't bookmark or share specific pages 
-- SEO (search engine optimization) 
-- require state management 
+## Dynamic Routing from Rails
+
+
 
 ### Component Notation vs Render Notation
 Component Notation just takes a component name and automatically adds the routerProps as props to it (history, location, match)
