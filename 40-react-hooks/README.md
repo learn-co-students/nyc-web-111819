@@ -138,8 +138,3 @@ useEffect(() => {
 - Appreciation to @reireynoso and @brewchetta
 
 
-### Notes to self
-- Create functional versions of those components first w/o the behavior and commented lines to use the right versions in the other files 
-- Sushi container first
-- App.js second
-
