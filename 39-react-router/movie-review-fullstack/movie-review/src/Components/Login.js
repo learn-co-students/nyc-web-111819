@@ -15,7 +15,11 @@ class Login extends React.Component{
 
   handleSubmit = (e) => {
     e.preventDefault()
-
+    if(this.state.password === '123'){
+      this.props.history.push(`/movies`)
+    } else {
+      alert("Try again !!")
+    }
   }
 
 

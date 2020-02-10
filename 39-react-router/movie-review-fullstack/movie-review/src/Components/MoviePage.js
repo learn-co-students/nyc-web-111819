@@ -1,10 +1,21 @@
 import React from 'react';
 import NewReviewForm from './NewReviewForm';
+import {API_BASE} from '../constants';
 
 class MoviePage extends React.Component {
   state = {
     addingReview: false,
     movie: null
+  }
+
+  componentDidMount(){    
+    fetch(`${API_BASE}/movies/${this.props.match.params.id}`)
+    .then(res => res.json())
+    .then(data => {
+      this.setState({
+        movie: data
+      })
+    })
   }
 
   toggleNewReviewForm = () => {
@@ -50,10 +61,12 @@ class MoviePage extends React.Component {
   }
 
   render() {
+   
+
     return (
       <div className="movie-page">
-          <div onClick={null} className="back-button">⬅️</div>
-          {this.renderMovieInfo(this.props)} 
+          <div onClick={() => this.props.history.push('/movies')} className="back-button">⬅️</div>
+          {this.state.movie && this.renderMovieInfo(this.state.movie)} 
       </div>
     );
   }

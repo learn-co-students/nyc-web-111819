@@ -3,12 +3,12 @@ React Router
 
 ## SWBAT
 
-- [ ] Create a multi-page SPA
-- [ ] Explain the advantages of using React Router
-- [ ] Utilize the most common `react-router` components to build a SPA: `BrowserRouter`, `Route`, `Switch`, `Link`, and `NavLink`
-- [ ] Use `push` and `history` to navigate pages
-- [ ] Create dynamic routes and use `params`
-- [ ] Make the distinction between `state` being one _Single Source of Truth_ and `react-router` being another _Single Source of Truth_
+- [X] Create a multi-page SPA
+- [X] Explain the advantages of using React Router
+- [X] Utilize the most common `react-router` components to build a SPA: `BrowserRouter`, `Route`, `Switch`, `Link`, and `NavLink`
+- [X] Use `push` and `history` to navigate pages
+- [X] Create dynamic routes and use `params`
+- [X] Make the distinction between `state` being one _Single Source of Truth_ and `react-router` being another _Single Source of Truth_
 - [ ] **HOMEWORK** Use `Redirect` to navigate pages
 
 
@@ -28,8 +28,25 @@ React Router
 
 ## SPAs
 
+### Benefits
+- hotreloading (webpack)
+- users are used to it 
+- after initial load, you got everything. no additional frontend requests necessary
+
+### Challenges 
+- browser navigation ( we don't have specific urls to navigate through )
+- no history 
+- no sharing, no bookmarking 
+- as it grows, gets infinitely more complex 
+- that initial load might take minute 
+
 
 ## Dynamic Routing from Rails
+SingleMovieView ==> /movies/:id
+AllMovies ==> /movies
+Login ==> /login
+Signup ==> /signup
+
 
 
 
