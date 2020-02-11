@@ -6,7 +6,7 @@ If you get asked this in a coding interview, and can't answer it's an immediate 
 2. List some common data structures, at least 3.
 
 
-3. Higher-order Functions
+3. Higher-Order Functions
 
 
 4. Closures
