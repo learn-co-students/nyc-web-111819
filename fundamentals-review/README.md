@@ -71,6 +71,7 @@ counter1.decrement();
 alert(counter1.value()); /* Alerts 1 */
 alert(counter2.value()); /* Alerts 0 */
 ```
+
  - In the above example, list the closure(s).
  - What is the lexical environment?
  - What parts of the example have access to `privateCounter`?
@@ -91,7 +92,7 @@ alert(counter2.value()); /* Alerts 0 */
   * What is an example of a many-to-many relationship?
     * How do you model this relationship? (Draw it out)
     * How do you describe this relationship with **Active Record**?
-    * In what order do you create the relevant instances and relate them to each other? 
+    * In what order do you create the relevant instances and relate them to each other?
 
 ## 9. `this`
 - Describe `this` in plain English.
