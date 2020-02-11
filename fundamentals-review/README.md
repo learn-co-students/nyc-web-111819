@@ -4,14 +4,14 @@ If you get asked this in a coding interview, and can't answer it's an immediate 
 
 ## 2. List some common JS data structures (at least 3).
 
-## 3. Higher-Order Function
+## 3. Higher-Order Functions
  - What is it?
  - What does it accept as a parameter (if anything)?
  - What does it return?
  - What is an example of a HOF?
  - What is the value of implementing a HOF?
 
-## 4. Higher-Order Component
+## 4. Higher-Order Components
  - What is it?
  - What does it accept as a parameter (if anything)?
  - What does it return?
@@ -81,7 +81,14 @@ alert(counter2.value()); /* Alerts 0 */
 
 ## 7. Domain model Twitter for me
 
-## 8. Posting to a join table
+## 8. Relationships
+  * What is an example of a one-to-many relationship?
+    * How do you model this relationship? (Draw it out)
+    * How do you describe this relationship with *Active Record*?
+  * What is an example of a many-to-many relationship?
+    * How do you model this relationship? (Draw it out)
+    * How do you describe this relationship with *Active Record*?
+    * 
 
 ## 9. Can you explain `this`? Do [these quizzes](https://dev.to/liaowow/take-this-quiz-understand-how-this-works-in-javascript-44dj) without looking at the answers, check yourself and then explain why the correct answers are correct.
 
