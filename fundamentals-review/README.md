@@ -88,9 +88,11 @@ alert(counter2.value()); /* Alerts 0 */
   * What is an example of a many-to-many relationship?
     * How do you model this relationship? (Draw it out)
     * How do you describe this relationship with *Active Record*?
-    * 
+    *
 
-## 9. Can you explain `this`? Do [these quizzes](https://dev.to/liaowow/take-this-quiz-understand-how-this-works-in-javascript-44dj) without looking at the answers, check yourself and then explain why the correct answers are correct.
+## 9. `this`
+- Describe `this` in plain English.
+- Do [these quizzes](https://dev.to/liaowow/take-this-quiz-understand-how-this-works-in-javascript-44dj) without looking at the answers. Check yourself, then explain why the correct answers are correct.
 
 
 ### *** If you're rocky you need to go back to the previous mod labs and take responsbility for your own success!!!!! ***
