@@ -80,15 +80,18 @@ alert(counter2.value()); /* Alerts 0 */
 ## 6. Logic / Problem Solving Skills
 
 ## 7. Domain model Twitter for me
+* What elements of Twitter do you want to model?
+  * Include the relationship(s). How do they interact with each other, if at all.
+  * Consider possible user stories.
 
 ## 8. Relationships
   * What is an example of a one-to-many relationship?
     * How do you model this relationship? (Draw it out)
-    * How do you describe this relationship with *Active Record*?
+    * How do you describe this relationship with **Active Record**?
   * What is an example of a many-to-many relationship?
     * How do you model this relationship? (Draw it out)
-    * How do you describe this relationship with *Active Record*?
-    *
+    * How do you describe this relationship with **Active Record**?
+    * In what order do you create the relevant instances and relate them to each other? 
 
 ## 9. `this`
 - Describe `this` in plain English.
