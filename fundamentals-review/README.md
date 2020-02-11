@@ -3,10 +3,22 @@ If you get asked this in a coding interview, and can't answer it's an immediate 
 1. What are the basic JS data types?
 
 
-2. List some common data structures, at least 3.
+2. List some common JS data structures (at least 3).
 
 
-3. Higher-Order Functions
+3. Higher-Order Function
+ - What is it?
+ - What does it accept as a parameter (if anything)?
+ - What does it return?
+ - What is an example of a HOF?
+ - What is the value of implementing a HOF?
+
+4. Higher-Order Component
+ - What is it?
+ - What does it accept as a parameter (if anything)?
+ - What does it return?
+ - What is an example of a HOC?
+ - What is the value of implementing a HOC?
 
 
 4. Closures
