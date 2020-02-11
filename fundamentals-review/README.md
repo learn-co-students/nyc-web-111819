@@ -22,6 +22,10 @@ If you get asked this in a coding interview, and can't answer it's an immediate 
 
 
 4. Closures
+ - What is a closure in plain English?
+ - How do closures make use of lexical scoping?
+ - What is the benefit of implementing closures?
+
 ```JS
 function makeAdder(x) {
   return function(y) {
@@ -32,11 +36,13 @@ function makeAdder(x) {
 var add5 = makeAdder(5);
 var add10 = makeAdder(10);
 
-console.log(add5(2));  // 7
-console.log(add10(2)); // 12
+console.log(add5(2));  /* logs 7 */
+console.log(add10(2)); /* logs 12 */
 ```
 
-and also
+ - In the above example, list the closure(s).
+ - What is `x` in `add5`?
+ - What is `x` in `add10`?
 
 ```JS
 var makeCounter = function() {
@@ -67,6 +73,11 @@ counter1.decrement();
 alert(counter1.value()); /* Alerts 1 */
 alert(counter2.value()); /* Alerts 0 */
 ```
+ - In the above example, list the closure(s).
+ - What is the lexical environment?
+ - What parts of the example have access to `privateCounter`?
+ - What parts of the example have access to `changeBy`?
+ - What does `increment` and `decrement` do and how do they work? 
 
 5. Logic / Problem Solving Skills
 
