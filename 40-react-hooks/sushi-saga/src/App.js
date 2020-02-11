@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SushiContainer from './containers/SushiContainer';
-// import SushiContainer from './containers/SushiContainerHook';
+// import SushiContainer from './containers/SushiContainer';
+import SushiContainer from './containers/SushiContainerHook';
 import Table from './containers/Table';
 
 // Endpoint!

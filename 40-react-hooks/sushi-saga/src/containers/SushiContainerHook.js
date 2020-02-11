@@ -1,34 +1,23 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import MoreButton from '../components/MoreButton'
 import Sushi from '../components/Sushi'
 
-//   state = {
-//     startIndex: 0
-//   }
-
-//   updateIndex = () => {
-//     let nextIndex = this.state.startIndex + 4 
-//     if( nextIndex >= this.props.sushis.length ){
-//       nextIndex = 0
-//     }
-//     this.setState({ startIndex: nextIndex })
-//   }
-
 
 function SushiContainer(props) {
-
-    let startIndex = 0,
-        displayedSushi = props.sushis.slice(startIndex, startIndex + 4),
-        updateIndex = () => {};
+  
+  const [getStartIndex, setStartIndex] = useState(0)
+  
+  let displayedSushi = props.sushis.slice(getStartIndex, getStartIndex + 4),
+  updateIndex = () => setStartIndex(getStartIndex >= props.sushis.length - 4  ?   0  : getStartIndex + 4 );
    
-    return (
-      <Fragment>
-        <div className="belt">
-          {displayedSushi.map(sushi => <Sushi key={sushi.id} {...sushi} eatSushi={props.eatSushi}/>)}
-          <MoreButton updateIndex={updateIndex}/>
-        </div>
-      </Fragment>
-    )
+  return (
+    <Fragment>
+      <div className="belt">
+        {displayedSushi.map(sushi => <Sushi key={sushi.id} {...sushi} eatSushi={props.eatSushi}/>)}
+        <MoreButton updateIndex={updateIndex}/>
+      </div>
+    </Fragment>
+  )
 }
 
 export default SushiContainer

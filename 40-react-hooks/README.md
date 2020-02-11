@@ -1,11 +1,11 @@
-# React Hooks (useState/useEffect)
+# React Hooks 
 
 ![Hook-Image](https://images.unsplash.com/photo-1541690090176-17d35a190b6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80)
 
 ## SWBATS
 - [ ] Understand the purpose of React Hooks 
 - [ ] Identify which types of components hooks work with and make comparisons to tools of React that we have already learned
-- [ ] Understand the syntax of useState() and how it is the equivalent of ...
+- [ ] Understand the syntax of useState() and how it is the equivalent of `state` and `setState`
 - [ ] Understand the syntax of useEffect() and how it is the equivalent of lifecycle methods(componentDidMount/componentDidUpdate)
 - [ ] Convert Class Components to Functional Components using Hooks
 
