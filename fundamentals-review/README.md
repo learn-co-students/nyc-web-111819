@@ -78,14 +78,12 @@ alert(counter2.value()); /* Alerts 0 */
  - What parts of the example have access to `changeBy`?
  - What does `increment` and `decrement` do and how do they work?
 
-## 6. Logic / Problem Solving Skills
-
-## 7. Domain model Twitter for me
-* What elements of Twitter do you want to model?
+## 6. Domain model Gmail for me
+* What elements of Gmail do you want to model?
   * Include the relationship(s). How do they interact with each other, if at all.
   * Consider possible user stories.
 
-## 8. Relationships
+## 7. Relationships
   * What is an example of a one-to-many relationship?
     * How do you model this relationship? (Draw it out)
     * How do you describe this relationship with **Active Record**?
@@ -94,9 +92,9 @@ alert(counter2.value()); /* Alerts 0 */
     * How do you describe this relationship with **Active Record**?
     * In what order do you create the relevant instances and relate them to each other?
 
-## 9. `this`
+## 8. `this`
 - Describe `this` in plain English.
 - Do [these quizzes](https://dev.to/liaowow/take-this-quiz-understand-how-this-works-in-javascript-44dj) without looking at the answers. Check yourself, then explain why the correct answers are correct.
 
 
-### *** If you're rocky you need to go back to the previous mod labs and take responsbility for your own success!!!!! ***
+### *** If you're rocky, you **need** to go back to the previous module labs and take **responsbility** for your own success!!!!! ***
