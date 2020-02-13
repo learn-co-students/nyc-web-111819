@@ -86,10 +86,48 @@ console.log(myName);
 var myName = 'Caryn';
 ```
 * Is there a difference between using `var`, `const`, and `let`?
+  * Does the following code log the same output as the above example? Why or why not?
+  ```JS
+  console.log(myName);
+  const myName = 'Caryn';
+  ```
 * How does an IIFE (immediately invoked function expression) affect hoisting, if at all?
 
 ## 7. Arrow Functions
+* What version of JS introduced arrow functions?
+* What does an arrow function replace?
+* When does an arrow function require a parenthesis?
+* How do arrow functions interact with `this`?
+* What is the difference between the following:
+```JS
+const func = x => x * x;
+```
+```JS
+const func = (x, y) => { return x + y; };
+```
+* What does the first console log? And the second? Why?
+```JS
+const adder = {
+  base: 1,
 
+  add: function(a) {
+    const f = v => v + this.base;
+    return f(a);
+  },
+
+  addThruCall: function(a) {
+    const f = v => v + this.base;
+    const b = {
+      base: 2
+    };
+
+    return f.call(b, a);
+  }
+};
+
+console.log(adder.add(1));         
+console.log(adder.addThruCall(1));
+```
 
 ## 8. Domain model Gmail for me
 * What elements of Gmail do you want to model?
