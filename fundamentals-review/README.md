@@ -10,7 +10,7 @@ If you get asked this in a coding interview, and can't answer it's an immediate 
  - What does it return?
  - What is an example of a HOF?
  - What is the value of implementing a HOF?
- - What are the differences or similarities to First Class Functions? 
+ - What are the differences or similarities to First Class Functions?
 
 ## 4. Higher-Order Components
  - What is it?
@@ -78,12 +78,25 @@ alert(counter2.value()); /* Alerts 0 */
  - What parts of the example have access to `changeBy`?
  - What does `increment` and `decrement` do and how do they work?
 
-## 6. Domain model Gmail for me
+## 6. Hoisting
+* Explain hoisting in plain English.
+* What does the following code log? Why?
+```JS
+console.log(myName);
+var myName = 'Caryn';
+```
+* Is there a difference between using `var`, `const`, and `let`?
+* How does an IIFE (immediately invoked function expression) affect hoisting, if at all?
+
+## 7. Arrow Functions
+
+
+## 8. Domain model Gmail for me
 * What elements of Gmail do you want to model?
   * Include the relationship(s). How do they interact with each other, if at all.
   * Consider possible user stories.
 
-## 7. Relationships
+## 9. Relationships
   * What is an example of a one-to-many relationship?
     * How do you model this relationship? (Draw it out)
     * How do you describe this relationship with **Active Record**?
@@ -92,7 +105,7 @@ alert(counter2.value()); /* Alerts 0 */
     * How do you describe this relationship with **Active Record**?
     * In what order do you create the relevant instances and relate them to each other?
 
-## 8. `this`
+## 10. `this`
 - Describe `this` in plain English.
 - Do [these quizzes](https://dev.to/liaowow/take-this-quiz-understand-how-this-works-in-javascript-44dj) without looking at the answers. Check yourself, then explain why the correct answers are correct.
 
