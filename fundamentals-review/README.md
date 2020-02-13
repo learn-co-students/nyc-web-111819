@@ -10,6 +10,7 @@ If you get asked this in a coding interview, and can't answer it's an immediate 
  - What does it return?
  - What is an example of a HOF?
  - What is the value of implementing a HOF?
+ - What are the differences or similarities to First Class Functions? 
 
 ## 4. Higher-Order Components
  - What is it?
@@ -17,7 +18,6 @@ If you get asked this in a coding interview, and can't answer it's an immediate 
  - What does it return?
  - What is an example of a HOC?
  - What is the value of implementing a HOC?
-
 
 ## 5. Closures
  - What is a closure in plain English?
@@ -97,4 +97,4 @@ alert(counter2.value()); /* Alerts 0 */
 - Do [these quizzes](https://dev.to/liaowow/take-this-quiz-understand-how-this-works-in-javascript-44dj) without looking at the answers. Check yourself, then explain why the correct answers are correct.
 
 
-### *** If you're rocky, you **need** to go back to the previous module labs and take **responsbility** for your own success!!!!! ***
+### *** If you're rocky, you **need** to go back to the previous module labs and take **responsibility** for your own success!!!!! ***
